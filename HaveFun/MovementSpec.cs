@@ -35,6 +35,13 @@ namespace HaveFun
             board.MovePlayer(2);
             Assert.Equal(2, board.PlayerToMove);
         }
+
+        [Fact]
+        public void CanCreateAGameWith3Players()
+        {
+            var board = new Board(3);
+            Assert.Equal(3, board.NumberOfPlayers);
+        }
     }
 }
 
