@@ -20,6 +20,13 @@ namespace HaveFun
             var player1Position = board.Player1Position;
             Assert.Equal(5,player1Position);
         }
+
+        [Fact]
+        public void BeforeAMovePLayer1IsToMove()
+        {
+            var board = new Board();
+            Assert.Equal(1, board.PlayerToMove);
+        }
     }
 }
 
