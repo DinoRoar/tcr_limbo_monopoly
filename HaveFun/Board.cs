@@ -19,6 +19,11 @@ namespace HaveFun
         {
             Player1Position = spaces;
             PlayerToMove++;
+
+            if (PlayerToMove > NumberOfPlayers)
+            {
+                PlayerToMove = 1;
+            }
         }
     }
 }

@@ -42,6 +42,16 @@ namespace HaveFun
             var board = new Board(3);
             Assert.Equal(3, board.NumberOfPlayers);
         }
+
+        [Fact]
+        public void In2PLayerGameAfter2MovesItIsPlayer1Move()
+        {
+            var board = new Board();
+            board.MovePlayer(2);
+            board.MovePlayer(2);
+            Assert.Equal(1, board.PlayerToMove);
+            
+        }
     }
 }
 
