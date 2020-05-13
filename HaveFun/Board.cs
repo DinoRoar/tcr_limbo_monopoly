@@ -2,9 +2,9 @@ namespace HaveFun
 {
     public class Board
     {
-        public Board()
+        public Board():this(2)
         {
-            NumberOfPlayers = 2;
+           
         }
 
         public Board(int numberOfPlayers)
