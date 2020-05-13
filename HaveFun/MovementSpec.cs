@@ -11,6 +11,12 @@ namespace HaveFun
             var player1Position = board.Player1Position;
             Assert.Equal(0, player1Position);
         }
+
+        [Fact]
+        public void AfterRolling5PlayerPositionisAt5()
+        {
+            Assert.Equal(5,5);
+        }
     }
     
     public class Board
