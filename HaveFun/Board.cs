@@ -8,6 +8,7 @@ namespace HaveFun
         public void MovePlayer(int spaces)
         {
             Player1Position = spaces;
+            PlayerToMove++;
         }
     }
 }
