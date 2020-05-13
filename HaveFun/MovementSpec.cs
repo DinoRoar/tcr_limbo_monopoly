@@ -15,11 +15,6 @@ namespace HaveFun
     
     public class Board
     {
-        public Board()
-        {
-            
-        }
-
         public int Player1Position { get; } = 0;
     }
 }
