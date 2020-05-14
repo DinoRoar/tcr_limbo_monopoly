@@ -5,9 +5,16 @@ namespace HaveFun
     public class BankPropertySpec
     {
         [Fact]
-        public void Test1()
+        public void PLayerstartsWith500()
         {
-            Assert.True(true);
+            var bank = new Bank();
+            var playerMoney = bank.Player1Money;
+            Assert.Equal(500, playerMoney);
         }
+    }
+
+    public class Bank
+    {
+        public int Player1Money { get; } = 500;
     }
 }
